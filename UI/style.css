@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(./images/diary.jpg);
+	background: url(./images/book.jpg);
 	background-size: cover;
 	background-position: center;
 	font-family: sans-serif;
@@ -150,6 +150,8 @@ h1{
      text-decoration: none;
      font-size: 14px;
      text-transform: uppercase;
+}
+
 }
 footer{
 	float:bottom-left;
