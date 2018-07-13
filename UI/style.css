@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(./images/diary.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	height:100vh;
+}
+.header{
+	text-align: left;
+	color:#39DC79;
+	font-size: 40px;
+	padding-left: 20px;
+}
+h4{
+	text-align: left;
+	color:#39DC79;
+	font-size: 20px;
+	padding-left: 10px;
+	width: 40%;
+}
+.login-box{
+	width: 320px;
+	height: 420px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.login{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login-box p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.login-box input{
+	width:100%;
+	margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1C8ADB;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover{
+	cursor: pointer;
+	background: #39DC79;
+	color: #000;
+}
+
+.login-box a{
+	text-decoration: none;
+	font-size: 14px;
+	color:#fff;
+}
+.login-box a:hover{
+	color: #39DC79;
+}
+.login-box .msg{
+     text-decoration: none;
+	font-size: 14px;
+	color:#fff;
+	margin-top: 20px;
+
+}
+
+.login_page{
+	width: 360px;
+	padding: 10% 0 0 0;
+	margin:0 auto;
+}
+.form{
+	position: relative;
+	z-index:1; 
+	background-color: #808080;
+	margin: 0 auto 100px;
+	max-width: 360px;
+	padding: 45px;
+	text-align: center;
+}
+.form input{
+	font-family: "Roboto",sans-serif;
+	background: #f2f2f2;
+	outline: 1;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+	font-family: "Roboto",sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+    border: 0;
+    padding:15px;
+    color:#ffffff;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.form button:hover,.form button:active{
+       background: #4CAF47;
+       color:black;
+}
+.form .msg{
+     margin: 15PX 0 0;
+     color:alice-blue;
+     font-size: 14px;
+}
+.form .msg a{
+     color: #4CAF50;
+     text-decoration: none;
+     font-size: 14px;
+     text-transform: uppercase;
+}
+footer{
+	float:bottom-left;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="nav.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+body{
+  background: grey;
+  height: 100vh;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+}
+input{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #000;
+  background-color: #ffffff;
+  width: 95%;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+button {
+  
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 95%;
+  margin-top:10px;
+}
+
+a:hover {
+  opacity: 0.7;
+  color: #39DC79;
+}
+</style>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="dashboard.html">My Diary</a>
+     <a href="user.html">User Profile</a>
+     <a href="index.html">Logout</a>
+   </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script><br>
+  
+<h2 style="text-align:center">User Profile</h2>
+
+<div class="card">
+  <img src="images/login2.jpeg" alt="kelvin" style="width:100%">
+  <h1>Kelvin Mutwiri</h1>
+  <p class="title">Number Of Entries Since Registration</p>
+  <input type="text" name="entries" value="218" readonly>
+  <a href="#">Reminder Settings</a>
+  <a href="#">Edit Profile</a>
+</div>
+
+<footer>
+  Copyright &copy AndelaDeveloper 2018
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body{
+    margin-left: 10px;
+	padding: 0;
+	background: url(./images/writing.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	height:100vh;
+	}
+      input{
+	    width:20%%;
+	    margin-bottom: 20px;
+      }
+      input[type="text"], input[type="date"]{
+       border: none;
+       border-bottom: 1px solid #fff;
+       background: transparent;
+       outline: none;
+       height: 40px;
+       color: #fff;
+       font-size: 16px;
+     }
+   input[value="Edit Entry"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1C8ADB;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+  input[value="Edit Entry"]:hover{
+	cursor: pointer;
+	background: #39DC79;
+	color: #000;
+}
+input[value="Delete Entry"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width:100%;
+    color: #ffffff;
+    font-size: 18px;
+    width:100%;
+    margin-bottom: 20px;
+    background: #e01d2d;
+    border-radius: 20px
+}
+
+  input[value="Delete Entry"]:hover{
+  cursor: pointer;
+  background: #9b0029;
+}
+p{
+	font-weight: bold;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+  <form>
+  	 <p>Title</p>
+        
+     <input type="text" name="EntryTitle" placeholder="Title of the Entry">
+        
+     <p>Date</p>
+        
+     <input type="text" name="date" placeholder="Date Of The Entry"><br><br>
+    
+     <h2>Description</h2>
+     <textarea name="message" rows="15" cols="80">The cat was playing in the garden.</textarea><br>
+
+     <input type="submit" id="edit" name="submit" style="width: 150px;" formaction="dashboard.html" value="Edit Entry">
+     <input type="submit" id="delete" name="submit" style="width: 150px;" formaction="dashboard.html" value="Delete Entry">
+  </form>
+  <footer>
+  Copyright &copy AndelaDeveloper 2018
+</footer>
+</body>
+</html>

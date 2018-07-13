@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="notify.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	h2{
+		color:#39DC79;
+		margin-bottom: 10px;
+		margin-top: 20px;
+	}
+	h3{
+
+	}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#thead{
+	background: #cdccff;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+td a{
+	text-decoration: none;
+}
+.btnA{
+    border: none;
+    outline: none;
+    height: 40px;
+    width:100%;
+    color: #1C8ADB;
+    font-size: 18px;
+    width:100%;
+	margin-bottom: 20px;
+	background: #00ff00;
+	border-radius: 20px;
+	style="width: 150px;" 
+}
+.btnA:hover{
+	cursor: pointer;
+	background: #336501;
+}
+
+.btnR{
+    border: none;
+    outline: none;
+    height: 40px;
+    width:100%;
+    color: #ffffff;
+    font-size: 18px;
+    width:100%;
+	margin-bottom: 20px;
+	background: #e01d2d;
+	border-radius: 20px;
+}
+.btnR:hover{
+	cursor: pointer;
+	background: #9b0029;
+}
+.btnM{
+    border: none;
+    outline: none;
+    height: 40px;
+    width:100%;
+    color: #00ff00;
+    font-size: 18px;
+}
+.btnM:hover{
+	cursor: pointer;
+	color: #009b72;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.maisha{
+	width: 100%;
+	height: 100px;
+	background: #008080;
+	color:#ffffff;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="dashboard.html">My Diary</a>
+     <a href="user.html">User Profile</a>
+     <a href="index.html">Logout</a>
+   </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+	
+
+    <div class="container">
+	<div class="maisha">
+		<h3 style="font-size: 25px; padding-top: 10px;">DIARY</h3>
+		<h3>My Life Testimony</h3>
+	</div>
+    <div class="notification-box">
+    <span class="notification-count">6</span>
+    <div class="notification-bell">
+      <span class="bell-top"></span>
+      <span class="bell-middle"></span>
+      <span class="bell-bottom"></span>
+      <span class="bell-rad"></span>
+    </div>
+  </div>
+
+
+	<h2>Dashboard</h2>
+     <table align="center">
+        <thead id="thead">
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sing</td>
+            <td>family chores done after classes</td>
+            <td>2018-7-11</td>
+            <td>
+              <a href="modify_entry.html" class="btnM">Modify Entry</a>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Play</td>
+            <td>Understand how to prioritize your stories.</td>
+            <td>2018-7-11</td>
+            <td>
+              <a href="modify_entry.html" class="btnM">Modify Entry</a>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Swim</td>
+            <td>Understand how to prioritize your stories.</td>
+            <td>2018-7-11</td>
+            <td>
+              <a href="modify_entry.html" class="btnM">Modify Entry</a>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Adventure</td>
+            <td>Understand how to prioritize your stories.</td>
+            <td>2018-7-11</td>
+            <td>
+              <a href="modify_entry.html" class="btnM">Modify Entry</a>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Hustling</td>
+            <td>Understand how to prioritize your stories.</td>
+            <td>2018-7-11</td>
+            <td>
+              <a href="modify_entry.html" class="btnM">Modify Entry</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <center style="padding: 10px;">
+      <form>
+      	<button type="submit" id="add" style="width: 150px;" class="btnA" formaction="add_entry.html">Add Entry</button>
+        <button type="submit" id="View" style="width: 150px;" class="btnR" formaction="view_entries.html">View Entries</button>
+      </form>
+      </center>
+   </div>
+   <footer class="dash">
+   	<div class="wrapper">
+   	  <nav>
+   		<ul>
+   			<li><a href="">Home</a></li>
+   			<li><a href="">About Me</a></li>
+   			<li><a href="">My Contact</a></li>
+   			<li><a href=""y>My Hobbies</a></li>
+   			<li><a href=""y>Copyright &copy AndelaDeveloper 2018</a></li>
+   		</ul>
+      </nav>
+   	</div>
+   </footer>
+</body>
+</html>
